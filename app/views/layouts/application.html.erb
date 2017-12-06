@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <%= csrf_meta_tags %>
+    <%= javascript_include_tag 'application' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <link rel="stylesheet" href="style.css">
+    <title>子ども食堂</title>
+  </head>
+<body>
+  <header>
+    <div class="heading">
+       <img src= "子ども食堂ナビ.png" alt="子ども食堂ナビ" class="子ども食堂ナビ">
+       <div class="login_box clearfix">
+     <%= link_to user_session_path do %>
+     <%= image_tag('login-image.png') %>
+     <% end %>
+    </div>
+
+
+   </div>
+
+    </div>
+  </header>
+
+<%= yield %>
+
+<footer>
+
+<a>Copyright(C) 子ども食堂ナビ ALL RIGHTS RESERVED.</a>
+<a><%= link_to "トップページに戻る", root_path %></a>
+<% if user_signed_in? %>
+  <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+<% end %>
+</footer>
+
+</body>
+</html>

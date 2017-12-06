@@ -1,0 +1,66 @@
+<div class="mypage clearfix" >
+  <section class="小見出し clearfix">
+      <h2>マイページ</h2>
+  </section>
+
+  <section class="小見出し clearfix">
+      <h2>お気に入り登録している食堂一覧</h2>
+
+<section class="shop1 clearfix">
+      <div class="pic-block clearfix">
+           <img src= "ゆめうた食堂.jpg" alt="ゆめうた子ども食堂" class="shop-pic">
+      </div>
+
+        <div class="shop-info-in-shoplist clearfix" >
+         <h2>ゆめうた子ども食堂</h2>
+        <br>さいたま市桜区
+　　　 　<br>バス停「在家橋通り」駅 徒歩30秒
+
+      </div>
+</section>
+
+<section class="shop1 clearfix">
+      <div class="pic-block clearfix">
+           <img src= "ゆめうた食堂.jpg" alt="ゆめうた子ども食堂" class="shop-pic">
+      </div>
+
+<% if current_user.likes %>
+        <% current_user.likes.each do |like| %>
+        <div class="shop-info-in-shoplist clearfix" >
+           <h2><%= like.shop.shop_name %></h2>
+          <br><%= like.shop.address %>
+           <%= link_to "口コミ",new_shop_review_path(like.shop.id) %>
+        </div>
+        <% end %>
+<% end %>
+</section>
+</section>
+
+
+
+ <section class="小見出し clearfix">
+    <h2><%= @nickname %>さんの口コミ投稿履歴</h2>
+  </section>
+
+<div class="reviews clearfix">
+
+    <% @reviews.each do |review| %>
+
+    <ul class="more_list" clearfix>
+      <li>
+      <% if user_signed_in? && current_user.id == review.user_id %>
+      <li>
+        <%= link_to '編集', edit_shop_review_path(review.shop.id,review.id), method: :get %>
+      </li>
+      <li>
+        <%= link_to '削除', shop_review_path(review.shop.id,review.id), method: :delete %>
+      </li>
+      <% end %>
+    </ul>
+    <h3><%= review.content_text %></h3>
+      </a>
+    </span>
+    <% end %>
+  </div>　
+
+

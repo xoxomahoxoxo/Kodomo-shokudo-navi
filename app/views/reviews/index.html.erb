@@ -1,0 +1,75 @@
+
+ <!--<div class="contents clearfix">-->
+  <div class="first-content">
+    <p class="key-sentence1">地域のひとが</p>
+    <p class="key-sentence2">家族になる場所。</p>
+  </div>
+
+
+  <section class="小見出し clearfix">
+    <h2><%= @shop.shop_name %></h2>
+  </section>
+     <div class= "iine clearfix">
+    <%= render partial: 'like', locals: { shop: @shop } %>
+     </div>
+    <section class="address clearfix">
+      <h5><%= @shop.address %></h5>
+    </section>
+
+
+
+  <section class="小見出し clearfix">
+    <h2>店舗情報</h2>
+   <section class="shop-feature clearfix">
+     <div class="details ">
+      <h5><%= @shop.shop_info %></h5>
+     </div>
+   </section>
+  </section>
+
+
+
+<section class="小見出し clearfix">
+  <h2>メニューなど</h2>
+  <secstion class="shop-feature clearfix">
+    <div class="details">
+      　<h5><%= @shop.Menu %></h5>
+    </div>
+  </section>
+</section>
+
+<section class="小見出し clearfix">
+  <h2>口コミを見てみよう！</h2>
+
+  <div class="reviews clearfix">
+    <% @reviews.each do |review| %>
+    <ul class="more_list">
+      <% if user_signed_in? && current_user.id == review.user_id %>
+      <li>
+        <%= link_to '編集', edit_shop_review_path(review.shop.id,review.id), method: :get %>
+      </li>
+      <li>
+        <%= link_to '削除',shop_review_path(review.shop.id,review.id), method: :delete %>
+      </li>
+      <% end %>
+    </ul>
+    <h3><%= review.content_text %></h3>
+    <span class="name">
+        <h3><%= review.user.nickname %></h3>
+    </span>
+    <% end %>
+  </div>
+  </section>
+
+
+
+
+
+  <section class="小見出し clearfix">
+    <h2>MAP</h2>
+  </section>
+
+    <section class=>
+    <img src="https://maps.googleapis.com/maps/api/staticmap?markers=<%= @shop.url_encode %>&size=600x450&key=AIzaSyB1l-vFcIr1wfcU4-Y0i4TFsyQUZTzBkQA" class="mapbox clearfix">
+
+    </section>

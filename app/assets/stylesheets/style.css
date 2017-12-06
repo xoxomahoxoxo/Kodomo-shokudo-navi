@@ -1,0 +1,392 @@
+body {
+  height:100%;
+  background-color: beige;
+  font-size: 16px;
+  color: #333;
+  margin: 0 auto;
+}
+
+h1,h2,h4,p{
+  padding: 10px 0;
+  margin: 0;
+}
+
+h4{
+  font-size: 40px;
+  color: #EEEEEE;
+}
+h1{
+  font-size: 20px;
+}
+
+h2{
+  text-align: center;
+}
+
+h3{
+  font-size: 16px;
+  color: black;
+}
+h5{
+  font-size: 12px;
+ text-align: center;
+}
+
+
+header {
+  background-color: gray;
+  /*height: 150px;*/
+}
+
+.子ども食堂ナビ{
+ height :100px ;
+  margin: auto;
+}
+
+.header-login{
+  float: right;
+  margin: 10px;
+  right: 100px;
+  top: 40px ;
+  position: absolute ;
+}
+
+
+.heading {
+   height: 120px;
+  /* width: 960px; */
+  background-color: beige;
+  margin: 20px auto;
+  text-align:center
+}
+
+
+.login_box{
+  float: right
+
+}
+/*ここからメイン写真*/
+
+.first-content{
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  background-image: url(子ども食堂.jpg);
+  background-size: cover;
+  float: left;
+}
+
+.key-sentence1{
+ margin: 60px;
+}
+
+.key-sentence2{
+ margin: 40px;
+}
+
+p{
+  font-size: 24px;
+  color: #EEEEEE;
+}
+
+/*ここまでメイン写真*/
+
+/*ここから店舗名・住所・予約ボタン*/
+
+
+
+.address{
+  float: left;
+  background-color: white;
+  width:100%;
+  height: 100%;
+}
+
+
+/*shop-infoいらないかな？
+.shop-info{
+  height: 100%;
+  width: 600px;
+  background-color: white;
+}*/
+
+
+
+/*ここまで店舗名・住所・予約ボタン*/
+
+/*ここから店舗情報*/
+
+.shop-feature{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.shop-feature .details{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+/*ここまで店舗情報*/
+
+
+.reviews{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  overflow: scroll ;
+}
+
+
+footer {
+  float: left;
+  background-color: beige;
+  height:50px;
+  width:100%;
+  text-align: center;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  margin: 0;
+  float: left;
+  padding-right: 10px;
+}
+td {
+  margin: 0;
+  padding-left: 10px;
+  line-height: 30px;
+}
+
+.shop1{
+ background-color: white;
+ height: 100%;
+ margin: auto;
+}
+
+.pic-block{
+  float: left;
+  width: 370px;
+
+}
+
+.pic-block .shop-pic{
+  width: 350px;
+  height:250px;
+  margin: 10px ;
+}
+
+.shop-info-in-shoplist{
+float: left;
+margin: 10px;
+background-color: white
+}
+
+
+.contents_row{
+  background-color: white;
+}
+
+
+.mapbox {
+  float: auto;
+  height: 100%;
+  width: 80%;
+  background-color: white;
+  margin: 5px 10%;
+      }
+
+
+
+.squale-2{
+  float: left;
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+
+
+.box1{
+  float: left;
+  width: 200px;
+  height: 130px;
+  margin: 40px 19%;
+}
+
+.box2{
+  float: right;
+ margin: 40px 10%;
+  width: 200px;
+  height: 130px;
+}
+
+
+
+.ログイン{
+  margin: 5px;
+  height: 50%;
+}
+
+
+
+.Tokyo{
+  float: left;
+  background-image: url(東京風景.jpeg);
+  margin: 30px 10%;
+  width: 25%;
+  height: 180px;
+
+}
+
+
+.Kanagawa{
+  float: right;
+  background-image: url(神奈川風景.jpeg);
+  margin: 30px 10%;
+  width: 25%;
+  height: 180px;
+
+}
+
+
+.Chiba{
+  float: left;
+  background-image: url(千葉風景.jpeg);
+  margin: 30px 10%;
+  width: 25%;
+  height: 180px;
+
+}
+
+
+.Saitama{
+  float: right;
+  background-image: url(埼玉風景.jpeg);
+  margin: 30px 10%;
+  width: 25%;
+  height: 180px;
+
+}
+
+
+/*ここから検索系*/
+
+.search-box{
+ width: 600px;
+  height: 50px;
+  margin: 400px auto 0;
+  border:black 1px solid;
+
+}
+
+.search-area{
+  float: left;
+  width: 180px;
+  height:50px;
+  border:black 1px solid;
+  background-color: white;
+
+
+}
+
+.search-date{
+  float: left;
+  width: 180px;
+  height:50px;
+  border:black 1px solid;
+  background-color: white;
+
+}
+
+
+.search-time{
+  float: left;
+  width: 180px;
+  height:50px;
+  border:black 1px solid;
+  background-color: white;
+
+}
+
+.search-button{
+  float: left;
+  width: 60px;
+  height:50px;
+  border:black 1px solid;
+}
+
+.search-list-4 {
+  float: left;
+  height: 500px;
+  width: 100%;
+  background-color: white;
+}
+
+/*ここまで検索系*/
+
+
+/*ここから「子ども食堂とは？」*/
+
+
+.小見出し{
+  float: left;
+  height :100%;
+  width: 100%;
+  background-color: beige;
+}
+
+
+.about-child-cafe {
+    float: left;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+
+.about-child-cafe .about-chinld-cafe-sentence{
+    float: left;
+  height: 120%;
+  width: 80%;
+  margin: 5px 10%;
+  background-color: white;
+  text-align:center;
+
+}
+
+/*ここまで「子ども食堂とは？」*/
+
+/*ここから「食堂検索」*/
+/*ここまで「食堂検索」*/
+
+.都道府県一覧{
+  float: left;
+  width: 100%;
+  background-color: beige;
+
+}
+
+.to_mypage{
+ float:center ;
+}
+
+.iine{
+  float: right;
+  margin: 10px;
+  right: 150px;
+  top: 660px ;
+  position: absolute ;
+}

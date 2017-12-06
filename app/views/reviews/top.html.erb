@@ -1,0 +1,68 @@
+    <div class="first-content">
+      <p class="key-sentence1">地域のひとが</p>
+      <p class="key-sentence2">家族になる場所。</p>
+    </div>
+
+
+
+    <form action="cgu-bin/example.cgi" method="post" class="search-box ">
+      <input type="search" name="search" placeholder="エリア" class="search-area">
+      <input type="search" name="search" placeholder="日にち" class="search-date">
+      <input type="search" name="search" placeholder="時間" class="search-time">
+      <input type="submit" name="submit" value="検索" class="search-button">
+    </form>
+
+
+   <section class="squale-2 clearfix">
+
+          <div class="box1 clearfix">
+            <img src= "クエスチョンマーク.png" alt="クエスチョンマーク">
+            <h1>子ども食堂って？</h1>
+          </div>
+
+           <div class="box2 clearfix">
+            <img src= "お店マーク.png" alt="お店マーク">
+            <h1>食堂検索</h1>
+           </div>
+
+   </section>
+
+   <section class="小見出し clearfix">
+     <h2>子ども食堂とは？</h2>
+   </section>
+
+    <section class ="about-child-cafe clearfix">
+     <div class="about-chinld-cafe-sentence">
+
+　      <br>「今晩のご飯は僕１人なんだ」
+　      <br>「お母さんがお仕事の日はお弁当を買って食べるの」
+　      <br>そんなとき、こどもが１人でも入れるのが
+        <br>“子ども食堂”
+　      <br>栄養満点の温かいごはんをつくって待っているのは、
+　      <br>近所のおじさん、おばさん、お姉さん、お兄さんたち。
+
+　　　　 <br>子ども食堂は
+　      <br>地域のひとが、家族になる場所です。
+        <br>
+     </div>
+     </section>
+
+    <section class="小見出し clearfix">
+      <h2>食堂検索</h2>
+    </section>
+    <section class="search-list-4 clearfix">
+
+      <div class="Tokyo">
+        <%= link_to "東京", shops_path(place_id: 1) %>
+      </div>
+      <div class="Kanagawa">
+        <%= link_to "神奈川", shops_path(place_id: 2)%>
+      </div>
+      <div class="Chiba">
+        <%= link_to "千葉", shops_path(place_id: 3)%>
+      </div>
+
+      <div class="Saitama">
+         <%= link_to "埼玉", shops_path(place_id: 4)%>
+      </div>
+    </section>
