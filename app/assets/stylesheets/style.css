@@ -45,12 +45,12 @@ header {
   /*height: 150px;*/
 }
 
-.子ども食堂ナビ{
- height :100px ;
-  margin: auto;
+.kodomo-navi{
+ height :200% ;
+ margin: auto;
 }
 
-.header-login{
+.login_box{
   float: right;
   margin: 10px;
   right: 100px;
@@ -78,7 +78,7 @@ header {
   width: 100%;
   height: 500px;
   background-color: white;
-  background-image: url(子ども食堂.jpg);
+  background-image: url(main-pic.jpg);
   background-size: cover;
   float: left;
 }
@@ -252,7 +252,7 @@ background-color: white
 
 .Tokyo{
   float: left;
-  background-image: url(東京風景.jpeg);
+  background-image: url(Tokyo.jpeg);
   margin: 30px 10%;
   width: 25%;
   height: 180px;
@@ -262,7 +262,7 @@ background-color: white
 
 .Kanagawa{
   float: right;
-  background-image: url(神奈川風景.jpeg);
+  background-image: url(Kanagawa.jpeg);
   margin: 30px 10%;
   width: 25%;
   height: 180px;
@@ -272,7 +272,7 @@ background-color: white
 
 .Chiba{
   float: left;
-  background-image: url(千葉風景.jpeg);
+  background-image: url(Chiba.jpeg);
   margin: 30px 10%;
   width: 25%;
   height: 180px;
@@ -282,7 +282,7 @@ background-color: white
 
 .Saitama{
   float: right;
-  background-image: url(埼玉風景.jpeg);
+  background-image: url(Saitama.jpeg);
   margin: 30px 10%;
   width: 25%;
   height: 180px;
