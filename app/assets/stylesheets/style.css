@@ -1,3 +1,7 @@
+a{
+  text-decoration: none;
+}
+
 body {
   height:100%;
   background-color: beige;
@@ -29,6 +33,9 @@ h3{
 }
 h5{
   font-size: 12px;
+ text-align: center;
+}
+h6{
  text-align: center;
 }
 
@@ -191,6 +198,7 @@ td {
 
 .shop-info-in-shoplist{
 float: left;
+width: 100%;
 margin: 10px;
 background-color: white
 }

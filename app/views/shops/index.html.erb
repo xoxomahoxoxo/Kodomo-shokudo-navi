@@ -7,24 +7,10 @@
       <h2><%= @place.place %>一覧</h2>
     </section>
 
-
-
-    <div class="shop-info-in-shoplist clearfix" >
-      <h2>ゆめうた子ども食堂</h2>
-       <br>さいたま市桜区
-　　　  <br>
-    </div>
-      <section class="shop1 clearfix">
-      <div class="pic-block clearfix">
-           <img src= "ゆめうた食堂.jpg" alt="ゆめうた子ども食堂" class="shop-pic">
-      </div>
-
-
-
 <div class="shop-info-in-shoplist clearfix" >
 <% @shops.each do |shop| %>
   <h2><%= link_to shop.shop_name, shop_reviews_path(shop.id) %></h2>
-   <h2><%= shop.picture %></h2>
+   <h2><%= image_tag shop.picture %></h2>
    <h5><%= shop.address %></h5>
 
 <% end %>

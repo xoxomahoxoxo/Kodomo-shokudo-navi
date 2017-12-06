@@ -6,30 +6,14 @@
   <section class="小見出し clearfix">
       <h2>お気に入り登録している食堂一覧</h2>
 
-<section class="shop1 clearfix">
-      <div class="pic-block clearfix">
-           <img src= "ゆめうた食堂.jpg" alt="ゆめうた子ども食堂" class="shop-pic">
-      </div>
-
-        <div class="shop-info-in-shoplist clearfix" >
-         <h2>ゆめうた子ども食堂</h2>
-        <br>さいたま市桜区
-　　　 　<br>バス停「在家橋通り」駅 徒歩30秒
-
-      </div>
-</section>
-
-<section class="shop1 clearfix">
-      <div class="pic-block clearfix">
-           <img src= "ゆめうた食堂.jpg" alt="ゆめうた子ども食堂" class="shop-pic">
-      </div>
 
 <% if current_user.likes %>
         <% current_user.likes.each do |like| %>
         <div class="shop-info-in-shoplist clearfix" >
-           <h2><%= like.shop.shop_name %></h2>
-          <br><%= like.shop.address %>
-           <%= link_to "口コミ",new_shop_review_path(like.shop.id) %>
+           <h2><%= link_to like.shop.shop_name,shop_reviews_path(like.shop.id) %></h2>
+           <h2><%= image_tag like.shop.picture %></h2>
+          <h6><%= like.shop.address %></h6>
+           <h6><%= link_to "口コミ",new_shop_review_path(like.shop.id) %></h6>
         </div>
         <% end %>
 <% end %>
