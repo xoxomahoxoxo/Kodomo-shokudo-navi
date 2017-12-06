@@ -49,3 +49,8 @@ end
   gem 'compass-rails','~> 2.0'
   gem 'sprockets'
   gem 'devise'
+
+  group :production do
+  gem 'rails_12factor'
+  gem 'mysql2', '0.3.18'
+end
