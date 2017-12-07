@@ -11,22 +11,23 @@
 <body>
   <header>
     <div class="heading">
-       <%= image_tag('kodomo-navi.png' ,width:500) %>
-       <div class="login_box clearfix">
-     <%= link_to user_session_path do %>
-     <%= image_tag('log-in.png') %>
-     <% end %>
+      <div class="kodomo-navi">
+        <%= link_to root_path do %>
+        <%= image_tag('kodomo-navi.png' ,width:500) %>
+        <% end %>
+      </div>
+    <div class="login_box clearfix">
+        <%= link_to user_session_path do %>
+        <%= image_tag('log-in.png') %>
+        <% end %>
+    </div>
     </div>
 
-
-   </div>
-
-    </div>
   </header>
 
 <%= yield %>
 
-<footer>
+  <footer>
 
 <a>Copyright(C) 子ども食堂ナビ ALL RIGHTS RESERVED.</a>
 <a><%= link_to "トップページに戻る", root_path %></a>
